@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class GlasnyeFile {
     public static void main(String[] args) throws FileNotFoundException {
-        HashMap<Character,Integer> lastLetter = new HashMap();
+        HashMap<Character,Integer> lastLetter = new HashMap<>();
         Scanner read = new Scanner(new File("inputnames.txt"));
         final String glasnye = "aeiouyAEIOUYаеёийыюяэоуАЕЁИЙЫЮЯЭОУ";
         while (read.hasNext()){
