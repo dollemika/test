@@ -23,15 +23,21 @@ public class MostCommonWord {
         read.close();
     }
     public static String findWord(HashMap<String,Integer> words){
-        String word = "";
+        String word = "", sentence = "";
         int max = 0;
         for (Map.Entry<String, Integer> pair : words.entrySet()){
             if (pair.getValue()>max){
                 max = pair.getValue();
-                word = pair.getKey();
             }
         }
-        return word;
+        for (Map.Entry<String, Integer> pair : words.entrySet()){
+            if (pair.getValue()==max){
+                word=pair.getKey();
+                sentence=sentence.concat(" ");
+                sentence=sentence.concat(word);
+            }
+        }
+        return sentence;
     }
 }
 
