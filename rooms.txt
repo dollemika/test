@@ -1,0 +1,4 @@
+1 thing1 1 2 3 room1
+2 thing2 2 3 4 room2
+3 thing3 3 4 5 room1
+4 thing4 4 5 6 room3
